@@ -201,6 +201,15 @@ const Index = () => {
               </div>
               +7 (953) 455-00-22
             </a>
+            <a 
+              href="mailto:u.godyackaya@mail.ru"
+              className="flex items-center gap-3 text-xl font-bold hover:scale-105 transition-transform"
+            >
+              <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <Icon name="Mail" size={28} />
+              </div>
+              u.godyackaya@mail.ru
+            </a>
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             <Button 
