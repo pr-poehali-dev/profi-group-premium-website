@@ -14,28 +14,34 @@ const Index = () => {
 
   const courses = [
     {
-      title: 'Программирование',
-      description: 'Изучение современных языков и технологий разработки',
-      icon: 'Code2',
+      title: 'Стоматология',
+      description: 'Современные методы диагностики и лечения',
+      icon: 'Smile',
       gradient: 'from-purple-500 to-pink-500'
     },
     {
-      title: 'Дизайн',
-      description: 'Создание профессиональных UI/UX решений',
-      icon: 'Palette',
+      title: 'Педиатрия',
+      description: 'Детское здоровье и развитие',
+      icon: 'Baby',
       gradient: 'from-pink-500 to-orange-500'
     },
     {
-      title: 'Маркетинг',
-      description: 'Стратегии продвижения в digital-среде',
-      icon: 'TrendingUp',
+      title: 'Терапия',
+      description: 'Общая и клиническая терапия',
+      icon: 'Stethoscope',
       gradient: 'from-orange-500 to-yellow-500'
     },
     {
-      title: 'Аналитика',
-      description: 'Data Science и бизнес-аналитика',
-      icon: 'BarChart3',
-      gradient: 'from-blue-500 to-purple-500'
+      title: 'Озонотерапия',
+      description: 'Инновационные методы лечения озоном',
+      icon: 'Droplets',
+      gradient: 'from-blue-500 to-cyan-500'
+    },
+    {
+      title: 'Хирургия',
+      description: 'Оперативные вмешательства и техники',
+      icon: 'Cross',
+      gradient: 'from-cyan-500 to-purple-500'
     }
   ];
 
@@ -85,7 +91,7 @@ const Index = () => {
                 Обучение <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">нового поколения</span>
               </h2>
               <p className="text-xl text-gray-600">
-                Развивайте профессиональные навыки с лучшими экспертами индустрии
+                Профессиональное медицинское образование для врачей
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button 
@@ -124,7 +130,7 @@ const Index = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">Популярные направления</h2>
             <p className="text-xl text-gray-600">Выберите курс, который откроет новые возможности</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {courses.map((course, index) => (
               <Card 
                 key={index}
@@ -156,9 +162,9 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">О нас</h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              <strong className="text-purple-600">Профи групп премиум</strong> — это современный образовательный центр, 
-              который помогает студентам и профессионалам достигать новых высот. 
-              Мы объединяем передовые методики обучения с практическим опытом лучших экспертов индустрии.
+              <strong className="text-purple-600">Профи групп премиум</strong> — это современный центр медицинского образования, 
+              который помогает врачам и медицинским специалистам повышать квалификацию. 
+              Мы объединяем передовые методики обучения с практическим опытом ведущих специалистов.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
